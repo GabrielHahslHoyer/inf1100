@@ -6,12 +6,12 @@
 // Lag en funksjon som kalkulerer avstanden mellom to punkt i planet
 
 void distance (double x1, double x2, double y1, double y2){
-    double xExponent = pow((x1 - x2), 2);
-    double yExponent = pow((y1 - y2), 2);
-    printf("The distance between the two points given is %lf\n", sqrt(xExponent + yExponent));
+    double xExponent = pow((x1 - x2), 2);   //squares the x factors
+    double yExponent = pow((y1 - y2), 2);   //squares the y factors
+    printf("The distance between the two points given is %lf\n", sqrt(xExponent + yExponent));  //prints the distance and calculates the root
 }
 
 int main(){
-    distance (2,3,2,23);
+    distance (2,3,2,23);    //input for the function "distance"
     return 0;
 }

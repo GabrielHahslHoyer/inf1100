@@ -9,9 +9,9 @@ if (antall_linjer <= 0){    //failsafe for input validity
         return;
 }
 else{   //making triangle
-        while (i <= antall_linjer){ //uses i as a guiding variable that increases with increments of one as the code loops
+        while (i <= antall_linjer){ //uses i as a guiding variable that increases with increments of one as the code loops, stops when i is greater than or equal to anntall_linjer
             int x = 1;
-            while (x <= i)  //prints characters until x == i 
+            while (x <= i)  //prints characters until x >= i 
             {
                 printf("%c", tegn);
                 x++;
